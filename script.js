@@ -13,7 +13,6 @@ function refreshData() {
   x = 1; // 5 Seconds
 
   latestLeague();
-  latestCup();
 
   setTimeout(refreshData, x * 1000);
 }
@@ -40,19 +39,6 @@ function latestLeague() {
 
       league.innerHTML = s;
     });
-}
-
-function latestCup() {
-  var str_late = "Sun, Sep 1 18:30";
-  var strr = str_late.substr(4, str_late.length) + " 2022";
-  var latest = new Date(strr);
-
-  var t = convertTime(latest);
-
-  dC.innerHTML = t[0];
-  hC.innerHTML = t[1];
-  mC.innerHTML = t[2];
-  sC.innerHTML = t[3];
 }
 
 function convertTime(date) {
