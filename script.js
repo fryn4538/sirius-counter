@@ -26,7 +26,7 @@ function latestLeague() {
     .then((response) => response.json())
     .then((json) => {
       //date = json["date"] + " 16:54";
-      date = "2023-05-27 19:25"
+      date = "2023-06-11 17:25"
       s = json["result"];
       var latest = new Date(date);
 
